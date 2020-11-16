@@ -1,0 +1,19 @@
+.container-header {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  &-navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 53px;
+    height: 65px;
+    align-items: center;
+    margin: 0 0 0 auto;
+    padding: 0 15px 0 15px;
+  }
+}

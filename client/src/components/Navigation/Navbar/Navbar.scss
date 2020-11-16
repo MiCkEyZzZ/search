@@ -1,0 +1,135 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #ffffff;
+  z-index: 1;
+
+  &.dark {
+    border-bottom: 1px solid #343434;
+    background-color: #343434;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 55px;
+    align-items: center;
+    margin: 0 40px 0 0;
+    padding: 0;
+    outline: none;
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+        display: flex;
+        height: 55px;
+        margin: 0;
+        padding: 0;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &--link {
+          display: flex;
+          justify-content: center;
+          font-family: Roboto, Arial, sans-serif;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: normal;
+          align-items: center;
+          margin: 0;
+          padding: 0 20px 0;
+          color: #5f6368;
+          border-bottom: 2px solid transparent;
+          outline: none;
+
+          &:hover {
+            color: #1390E5;
+            opacity: .5;
+          }
+
+          &.active {
+            color: #1390e5;
+            border-bottom: 2px solid #1390e5;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: auto;
+      height: 55px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      &-btn {
+        font-weight: 600;
+        color: #3d3d3d;
+        background: #f3f6f9;
+        border-radius: 0.42rem;
+
+        &:hover {
+          color: #ffffff;
+          background: #3699ff;
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

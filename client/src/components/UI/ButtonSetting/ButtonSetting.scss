@@ -1,0 +1,38 @@
+.container-button-check {
+  margin: 0;
+  padding: 0;
+
+  &.dark {
+    background-color: #3d3d3d;
+  }
+
+  &__btn {
+    height: 38px;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 17px 0 17px;
+    color: #191919;
+    background-color: #ebebeb;
+    border-color: transparent;
+    border-radius: 4px;
+    text-shadow: none;
+    cursor: pointer;
+    user-select: none;
+
+    &.dark {
+      background-color: #3d3d3d;
+    }
+
+    &.active {
+      padding: 0 21px 0 21px;
+      color: #fff;
+      background-color: #1390e5;
+      border: 1px solid #1390e5;
+
+      &.dark {
+        background-color: #3d3d3d;
+      }
+    }
+  }
+}

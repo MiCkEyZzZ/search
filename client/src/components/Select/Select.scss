@@ -1,0 +1,126 @@
+.container-select {
+  position: relative;
+  margin: 2px 0 0 0;
+  padding: 0;
+
+  &-label {
+    position: relative;
+    width: 350px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 40px 10px 15px;
+    color: rgba(39, 39, 39, .3);
+    border: 1px solid rgba(23, 23, 25, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+
+    &.dark {
+      color: #eeeeee;
+      background-color: #343434;
+      border-color: transparent;
+
+      &:focus {
+        border: 1px solid #eeeeee;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: 22px;
+      right: 15px;
+      display: flex;
+      justify-content: center;
+      width: 10px;
+      height: 5px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      &-down {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        transform: rotate(0deg);
+      }
+
+      &-up {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &-panel {
+    position: absolute;
+    top: 50px;
+    width: 350px;
+    height: 176px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid rgba(23, 23, 25, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+
+    &.dark {
+      color: #eeeeee;
+      background-color: #343434;
+      border-color: transparent;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 176px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      display: flex;
+      font-family: Roboto, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: normal;
+      align-items: center;
+      margin: 0 0 2px 0;
+      padding: 10px 10px 11px 10px;
+      cursor: pointer;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &:hover {
+        background-color: #fafafa;
+      }
+
+      &.active {
+        color: #ffffff;
+        background-color: rgba(19, 144, 229, .8);
+      }
+    }
+  }
+}

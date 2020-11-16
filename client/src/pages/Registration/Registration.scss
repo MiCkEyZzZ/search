@@ -1,0 +1,180 @@
+.auth-registration {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+
+  &__form {
+    position: relative;
+    width: 100%;
+    max-width: 410px;
+    height: 579px;
+    margin: 290px auto 0 auto;
+    padding: 30px 0 35px 0;
+
+    &.dark {
+      background-color: #3d3d3d;
+      box-shadow: 1px 1px 10px -5px rgba(0, 0, 0, .5);
+    }
+
+    &-logo {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      font-family: Poppins, Helvetica, "sans-serif";
+      line-height: 28px;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      margin: 32px 0 0 0;
+      padding: 0;
+      color: #3f4254;
+
+      &.dark {
+        color: #eeeeee;
+        background-color: transparent;
+      }
+    }
+
+    &-subtitle {
+      width: 100%;
+      font-size: .9rem;
+      font-family: Poppins, Helvetica, "sans-serif";
+      text-align: center;
+      margin: 8px auto 32px auto;
+      padding: 0;
+      color: #b5b5c3;
+    }
+
+    &-form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 334px;
+      margin: 0 auto;
+      padding: 0;
+
+      &-input {
+        width: 334px;
+        margin: 0 0 10px 0;
+        padding: 0;
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+      &-label {
+        font-size: 1rem;
+        font-family: Poppins, Helvetica, "sans-serif";
+        margin: 0;
+        padding: 0;
+        color: #b5b5c3;
+      }
+
+      &-inp {
+        width: 334px;
+        font-size: 20px;
+        font-family: Poppins, Helvetica, "sans-serif";
+        font-style: normal;
+        font-weight: normal;
+        margin: 5px 0 0 0;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        color: #3F4254;
+        background-color: #f3f6f9;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        &.dark {
+          color: #eeeeee;
+          background-color: #343434;
+          border-color: transparent;
+        }
+      }
+
+      &-button {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        margin: 10px auto 0  auto;
+        padding: 0;
+
+        &--lg {
+          font-family: Poppins, Helvetica, "sans-serif";
+          background-color: #1390e5;
+          transition: opacity .4s;
+
+          &.dark {
+            color: #eeeeee;
+            background-color: #343434;
+            border-color: transparent;
+          }
+        }
+
+        &--link {
+          font-size: 1rem;
+          font-family: Poppins, Helvetica, "sans-serif";
+          letter-spacing: .25px;
+          font-weight: 500;
+          margin: 0;
+          padding: 0;
+          color: #b5b5c3;
+
+          &.dark {
+            color: #eeeeee;
+            background-color: transparent;
+          }
+
+          &:hover {
+            color: #1390e5;
+          }
+        }
+      }
+
+      &-icon {
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 13px;
+      right: 16px;
+      display: flex;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      & svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        stroke: #d1d1d1;
+      }
+    }
+  }
+}
