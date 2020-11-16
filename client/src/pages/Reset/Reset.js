@@ -36,6 +36,10 @@ export const Reset = () => {
         } catch (e) {}
     }
 
+    const handleCancel = () => {
+        history.push('/login')
+    }
+
     return (
         <div className='auth-reset'>
             <div className={darkmode ? "auth-reset__form dark" : "auth-reset__form"}>
@@ -63,6 +67,11 @@ export const Reset = () => {
                                 className={darkmode ? 'auth-reset__form-form-button--lg dark' : 'auth-reset__form-form-button--lg'}
                                 onClickButton={handleReset}
                                 disabled={loading}
+                            />
+                            <Button
+                                title='Отменить'
+                                className={darkmode ? 'auth-reset__form-form-button--cancel dark' : 'auth-reset__form-form-button--cancel'}
+                                onClickButton={handleCancel}
                             />
                         </div>
                     </div>
